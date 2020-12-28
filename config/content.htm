@@ -1,5 +1,6 @@
 <h1>首頁</h1>
-<h2>PCH4</h2>
+<h2>HW1</h2>
+<h3>PCH4</h3>
 <p>PCH4外殼，外形尺寸和電源:</p>
 <p id="N10699" lang="">In this lesson, we are going to cover the various cases available for computers, several form factors or layouts of the motherboards, and the different types of power supplies that we use to provide direct current (DC) to the computer’s components.</p>
 <p lang="">在本課程中，我們將介紹計算機可用的各種情況，主板的幾種外形尺寸或佈局以及用於為計算機組件提供直流（DC）的不同類型的電源。</p>
@@ -176,7 +177,7 @@
 <div class="activitywrap purpose learnbydoing flash" id="dpch04_lbd01">
 <div class="activityhead">
 <div class="purposeType purposelearnbydoing" title="">
-<h2 class="contentContain">PCH5</h2>
+<h3 class="contentContain">PCH5</h3>
 <p>PCH 5:主板，擴展總線和處理器</p>
 <p>In this lesson, we will cover the purpose and function of the motherboard. We will also cover central processing units (CPUs) and the various technologies that exist to provide specialized functionality for CPUs, such as virtualization, hyperthreading, and multicore processors. Finally, we will cover the various methods of CPU cooling available, such as active and passive heat sinks, as well as liquid cooling.</p>
 <p>在本課程中，我們將介紹主板的用途和功能。我們還將介紹中央處理器（CPU）和為CPU提供專門功能的各種技術，例如虛擬化，超線程和多核處理器。最後，我們將介紹可用的各種CPU冷卻方法，例如主動和被動散熱器以及液體冷卻。</p>
@@ -288,10 +289,17 @@
 <p>Computer fan installed on a motherboard.<br/>Computer fan. Photo used under CC-BY-NC-ND license from Thomas Ormston.</p>
 <p><span class="image"><img alt="安裝在CPU上的液體冷卻設備。 連接到設備的是兩個運送液體的綠色管。" class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH05/webcontent/PCH05/image16.png" title="安裝在CPU上的液體冷卻設備。 連接到設備的是兩個運送液體的綠色管。"/></span><br/>電腦風扇。 照片由Thomas Ormston根據CC-BY-NC-ND許可使用。Liquid cooling device installed on a CPU. Attached to the device are two green tubes carrying liquid.<br/>Liquid-cooled CPU. Photo used under CC-BY license from Don Richards.</p>
 <p>水冷式CPU。 照片由Don Richards根據CC-BY許可使用。</p>
-<h1>HW2</h1>
+<h2>HW2</h2>
 <p lang=""><span><img alt="" height="174" src="/images/1.png" width="446"/></span></p>
 <p lang=""><span></span></p>
-<p lang=""><span>from random import shuffle<br/>list = [40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]<br/>shuffle(list)<br/>n = 5<br/>m = int(len(list)/n)<br/>list2 = []<br/>for i in range(0, len(list),m):<br/> list2.append(list[i:i+m])<br/>print(list2)</span></p>
+<p lang=""><span>from random import shuffle<br/>list = [40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]<br/></span></p>
+<p lang=""><span>shuffle(list) 隨機撥放<br/>n = 5<br/>m = int(len(list)/n)<br/>list2 = []<br/>for i in range(0, len(list),m):<br/> list2.append(list[i:i+m])<br/>print(list2)</span></p>
+<p lang="">__________________________________________________________________________</p>
+<p lang=""><img alt="" height="213" src="/images/擷取.PNG" width="500"/></p>
+<p lang="">試做:</p>
+<p lang=""><span>https://www.kaggle.com/nfu40923234/cp2020w8-hw2</span></p>
+<p>import urllib.request<br/>target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"<br/>cp1b = []<br/>for line in urllib.request.urlopen(target_url):<br/>    cp1b.append(int(line.decode('utf-8').rstrip()))<br/>from random import shuffle<br/>shuffle(cp1b)<br/>n = 5<br/>m = int(len(cp1b)/n)<br/>list2 = []<br/>for i in range(0,len(cp1b),m):<br/>    list2.append(cp1b[i:i+m])<br/>print(list2)</p>
+<p><span>&gt;&gt;</span><span><span>&gt;</span></span>[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]</p>
 <div actguid="d87f2d8c0a0001dc0582e9d55eff02cc" class="superact loading" inlineparams="inlineClient=%2Fsuperactivity%2Fembed%2Fembed.html&amp;activityMode=delivery&amp;activityContextGUID=d87f2d8c0a0001dc0582e9d55eff02cc&amp;userGUID=40923234%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fsuperactivity%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose lab flash" id="dpowersupply_test">
 <div class="actContain">
