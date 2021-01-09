@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='PCH4.html'>PCH4</a><li><a href='PCH5.html'>PCH5</a></li></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='隨機數，續.html'>隨機數，續</a></li>
+                     <li class='has-children'><a href='首頁.html'>首頁</a><ul class='dropdown'><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='PCH4.html'>PCH4</a><li><a href='PCH5.html'>PCH5</a></li></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='Exercise 10.html'>Exercise 10</a><li><a href='Exercise 11.html'>Exercise 11</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,74 +133,14 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">hw2 << <a href='hw2.html'>Previous</a> <a href='隨機數，續.html'>Next</a> >> 隨機數，續<br /><h1>hw3</h1>
+    <div id="tipue_search_content">hw2 << <a href='hw2.html'>Previous</a> <a href='Exercise 10.html'>Next</a> >> Exercise 10<br /><h1>hw3</h1>
 <br/><br/><span>List Overlap Comprehensions </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>
 <p><span>列表重疊理解<span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></p>
 <div actguid="d87f2d8c0a0001dc0582e9d55eff02cc" class="superact loading" inlineparams="inlineClient=%2Fsuperactivity%2Fembed%2Fembed.html&amp;activityMode=delivery&amp;activityContextGUID=d87f2d8c0a0001dc0582e9d55eff02cc&amp;userGUID=40923234%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fsuperactivity%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose lab flash" id="dpowersupply_test">
 <div class="actContain">
 <div class="activityhead">
-<div class="activityinfo">Exercise 10 </div>
-<div class="activityinfo"><span>練習10</span>
-<p>This week’s exercise is going to be revisiting an old exercise (see<span> </span><a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html">Exercise 5</a>), except require the solution in a different way.</p>
-<p>Take two lists, say for example these two:</p>
-<p><span>本週的練習將重溫舊的練習（請參閱</span><a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html"><span>練習5</span></a><span>），只是需要以其他方式解決。</span></p>
-<p><span><span>拿兩個列表，舉例來說，這兩個：</span></span></p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python">	<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span>
-	<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span></code></pre>
-</figure>
-<p>and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes. Write this<span> </span><s>in one line of Python</s><span> </span><em>using at least one list comprehension</em>. (<em>Hint: Remember<span> </span><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">list comprehensions</a><span> </span>from Exercise 7</em>).</p>
-<p><span>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。確保您的程序可以在兩個不同大小的列表上運行。<em>使用至少一個列表理解</em></span><s><span><span>語句在一行Python中</span></span></s><span><span> </span></span><span><span>編寫</span><span>。</span><span>（</span><em><span>提示：記住</span></em><em><span>練習7中的</span></em><em><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html"><span>列表理解</span></a></em><span>）。</span></span></p>
-<p><em>The original formulation of this exercise said to write the solution using one line of Python, but a few readers pointed out that this was impossible to do without using<span> </span><code class="highlighter-rouge">set</code>s that I had not yet discussed on the blog, so you can either choose to use the original directive and read about the<span> </span><a href="https://docs.python.org/3.3/library/stdtypes.html?highlight=set#set"><code class="highlighter-rouge">set</code><span> </span>command in Python 3.3</a>, or try to implement this on your own and use at least one list comprehension in the solution.</em></p>
-<p><em><span>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。確保您的程序可以在兩個不同大小的列表上運行。使用至少一個列表理解</span><s><span><span>語句在一行Python中</span></span></s><span><span> </span></span><span><span>編寫</span><span>。</span><span>（</span><em><span>提示：記住</span></em><em><span>練習7中的</span></em><em><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html"><span>列表理解</span></a></em><span>）。</span></span></em></p>
-<p>Extra:</p>
-<p><span>額外：</span></p>
-<ul>
-<li>Randomly generate two lists to test this</li>
-<li><span><span>隨機生成兩個列表進行測試</span></span></li>
-</ul>
-Discussion</div>
-<div class="activityinfo"><span>討論區</span>
-<p>Concepts for this week:</p>
-<p><span>本週的概念：</span></p>
-<ul>
-<li>List comprehensions</li>
-<li><span><span>清單理解</span></span></li>
-<li>Random numbers, continued</li>
-<li><span><span>隨機數，續</span></span></li>
-</ul>
-List comprehensions</div>
-<div class="activityinfo"><span>清單理解</span>
-<p>We already discussed list comprehensions in<span> </span><a href="http://practicepython.blogspot.com/2014/03/exercise-7-list-comprehensions.html">Exercise 7</a>, but they can be made much more complicated.</p>
-<p><span>我們已經在</span><a href="http://practicepython.blogspot.com/2014/03/exercise-7-list-comprehensions.html"><span><span>練習7中</span></span></a><span><span>討論了列表理解</span><span>，但是可以使它們複雜得多。</span></span></p>
-<p>For example:</p>
-<p>例如:</p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python">	<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-	<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
-	<span class="n">allproducts</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">y</span><span class="p">]</span></code></pre>
-</figure>
-<p>At the end of this piece of code,<span> </span><code class="highlighter-rouge">allproducts</code><span> </span>will contain the list<span> </span><code class="highlighter-rouge">[5, 10, 15, 10, 20, 30, 15, 30, 45]</code>. So you can put multiple for loops inside the comprehension. But you can also add more complicated conditionals:</p>
-<p><span>在這段代碼的最後，</span><code class="highlighter-rouge">allproducts</code><span><span>將包含list<span> </span></span></span><code class="highlighter-rouge">[5, 10, 15, 10, 20, 30, 15, 30, 45]</code><span><span>。</span><span>因此，您可以在理解中放入多個for循環。</span><span>但是您還可以添加更複雜的條件：</span></span></p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python">	<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-	<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
-	<span class="n">customlist</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">y</span> <span class="k">if</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">%</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span></code></pre>
-</figure>
-<p>Now<span> </span><code class="highlighter-rouge">customlist</code><span> </span>contains<span> </span><code class="highlighter-rouge">[5, 15, 15, 45]</code><span> </span>because only the odd products are added to the list.</p>
-<p><span></span></p>
-<p>In general, the list comprehension takes the form:</p>
-<p><span>現在</span><code class="highlighter-rouge">customlist</code><span>包含，</span><code class="highlighter-rouge">[5, 15, 15, 45]</code><span>因為僅將奇數產品添加到列表中。</span></p>
-<p><span><span>通常，列表理解採用以下形式：</span></span></p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python">	<span class="p">[</span><span class="n">EXPRESSION</span> <span class="n">FOR_LOOPS</span> <span class="n">CONDITIONALS</span><span class="p">]</span></code></pre>
-</figure>
-<p>as shown in the examples above.</p>
-<p><span>如以上示例所示。</span></p>
-Random numbers, continued</div>
-<div class="activityinfo">
-<br />hw2 << <a href='hw2.html'>Previous</a> <a href='隨機數，續.html'>Next</a> >> 隨機數，續</div>
+<br />hw2 << <a href='hw2.html'>Previous</a> <a href='Exercise 10.html'>Next</a> >> Exercise 10</div>
         
     <!-- footer -->
       <div class="container">
